@@ -8,11 +8,11 @@ namespace ChatHub.Controllers
 {
     [ApiController]
     [Route("/api/[controller]")]
-    public class WebSocketController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly WebSocketHandler _webSocketHandler;
 
-        public WebSocketController(WebSocketHandler webSocketHandler) => _webSocketHandler = webSocketHandler;
+        public UserController(WebSocketHandler webSocketHandler) => _webSocketHandler = webSocketHandler;
 
         [HttpGet]
         public async Task<IActionResult> Connect()
