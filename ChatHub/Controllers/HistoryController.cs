@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 namespace ChatHub.Controllers
 {
     [ApiController]
-    [Route("/api/history")]
+    [Route("/api/chatHistory")]
     public class HistoryController : ControllerBase
     {
         [HttpGet]
@@ -23,7 +23,7 @@ namespace ChatHub.Controllers
         [HttpGet("{name}")]
         public async Task<IActionResult> GetUserHistory(string name, [FromServices] ChatHistory chatHistory)
         {
-            var messages = await chatHistory.ChatMessages.Where(m => m.Sender == name).OrderBy(m => m.Timestamp).ToListAsync();
+            var messages = await chatHistory.ChatMessages.Where(m => m.ID == name).OrderBy(m => m.Timestamp).ToListAsync();
             return Ok(messages);
         }
     }

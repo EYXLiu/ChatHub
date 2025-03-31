@@ -12,7 +12,7 @@ namespace ChatHub.Services
         public async Task HandleConnectionAsync(WebSocket webSocket, string name = "Anonymous")
         {
             var socketID = Guid.NewGuid().ToString();
-            _manager.AddSocket(socketID, name, webSocket);
+            await _manager.AddSocket(socketID, name, webSocket);
 
             var buffer = new byte[1024 * 4];
 

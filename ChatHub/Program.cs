@@ -11,8 +11,12 @@ builder.Services.AddDbContext<ChatHistory>(options =>
     options.UseSqlite("Data Source=chat.db")
 );
 
-builder.Services.AddScoped<WebSocketConnectionManager>();
-builder.Services.AddScoped<WebSocketHandler>();
+builder.Services.AddDbContext<UserHistory>(options => 
+    options.UseSqlite("Data Source=user.db")
+);
+
+builder.Services.AddSingleton<WebSocketConnectionManager>();
+builder.Services.AddSingleton<WebSocketHandler>();
 builder.Services.AddOpenApi();
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
@@ -23,6 +27,8 @@ using (var scope = app.Services.CreateScope())
 {
     var dbContext= scope.ServiceProvider.GetRequiredService<ChatHistory>();
     dbContext.Database.Migrate();
+    var userContext = scope.ServiceProvider.GetRequiredService<UserHistory>();
+    userContext.Database.Migrate();
 }
 
 // Configure the HTTP request pipeline.
