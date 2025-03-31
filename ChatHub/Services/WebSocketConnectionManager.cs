@@ -65,7 +65,7 @@ namespace ChatHub.Services
             var bytes = Encoding.UTF8.GetBytes(message);
             foreach (var (ID, (name, socket)) in _sockets)
             {
-                if (socket.State == WebSocketState.Open && socketID != ID)
+                if (socket.State == WebSocketState.Open && (socketID == null || socketID != ID))
                 {
                     await socket.SendAsync(new ArraySegment<byte>(bytes), WebSocketMessageType.Text, true, CancellationToken.None);
                 }
