@@ -2,11 +2,13 @@
 Tech Stack: ASP.NET Core, C#, Raw Websockets, SQLite  
 
 # About
-* Websockets real time messaging chat communication using ASP.NET Core backend written in C#
-* Includes multiple user support where users can join and send/receive messages in real time
-* Uses Sqlite to setup a database and store the chat history for future access, including both entire chat history and user specific history
-* Designed to support as many users as required
-* Uses IServerProvider for C# Server Lifecycle Scope Management
+* Implemented real-time messaging and chat communication using WebSockets with an ASP.NET Core backend written in C#
+* Supports multiple users, allowing them to join the chat and send/receive messages in real time
+* Stores chat history in a SQLite database, ensuring both global and user-specific message histories are available for future access
+* Designed to scale, supporting as many users as required for seamless communication
+* Utilized `IServerProvider` and ASP.NET best practices for effective C# server lifecycle scope management
+* Written using both Controllers and Minimal API endpoints for clean and modularized files
+* File directory sorted according to best practices - Controllers, Data, Model, Services files with according classes
 
 # Deployment
 * Run `dotnet run` to deploy the server to a localhost
