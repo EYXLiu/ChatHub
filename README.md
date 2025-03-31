@@ -4,7 +4,7 @@ Tech Stack: ASP.NET Core, C#, Sqlite
 # About
 * Websockets real time messaging chat communication using ASP.NET Core backend written in C#
 * Includes multiple user support where users can join and send/receive messages in real time
-* Uses Sqlite to setup a database and store the chat history for future access
+* Uses Sqlite to setup a database and store the chat history for future access, including both entire chat history and user specific history
 * Designed to support multiple group chats and users
 
 # Deployment
