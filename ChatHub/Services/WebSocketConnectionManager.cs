@@ -62,11 +62,6 @@ namespace ChatHub.Services
                 await AddChatHistory(chatMessage);
             }
 
-            if (socketID == null)
-            {
-                socketID = Guid.NewGuid().ToString();
-            }
-
             var bytes = Encoding.UTF8.GetBytes(message);
             foreach (var (ID, (name, socket)) in _sockets)
             {
