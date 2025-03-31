@@ -1,11 +1,12 @@
 # ChatHub
-Tech Stack: ASP.NET Core, C#, Sqlite  
+Tech Stack: ASP.NET Core, C#, Raw Websockets, Sqlite  
 
 # About
 * Websockets real time messaging chat communication using ASP.NET Core backend written in C#
 * Includes multiple user support where users can join and send/receive messages in real time
 * Uses Sqlite to setup a database and store the chat history for future access, including both entire chat history and user specific history
-* Designed to support multiple group chats and users
+* Designed to support as many users as required
+* Uses IServerProvider for C# Server Lifecycle Scope Management
 
 # Deployment
 * Run `dotnet run` to deploy the server to a localhost
