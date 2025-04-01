@@ -1,5 +1,5 @@
 # ChatHub
-Tech Stack: ASP.NET Core, C#, Raw Websockets, SQLite  
+Tech Stack: ASP.NET Core, C#, Raw Websockets, SQLite, Postman
 
 # About
 * Implemented real-time messaging and chat communication using WebSockets with an ASP.NET Core backend written in C#
