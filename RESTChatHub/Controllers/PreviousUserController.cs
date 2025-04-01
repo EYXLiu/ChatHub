@@ -7,7 +7,7 @@ using ChatHub.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.HttpResults;
 
-namespace ChatHub.Controllers
+namespace RESTChatHub.Controllers
 {
     [ApiController]
     [Route("/api/userHistory")]

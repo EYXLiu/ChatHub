@@ -4,7 +4,7 @@ using System.Net.WebSockets;
 using System.Threading.Tasks;
 using ChatHub.Services;
 
-namespace ChatHub.Controllers
+namespace RESTChatHub.Controllers
 {
     [ApiController]
     [Route("/api/[controller]")]

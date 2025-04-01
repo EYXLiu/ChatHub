@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ChatHub.Models
+namespace RESTChatHub.Models
 {
     public class ChatMessage
     {

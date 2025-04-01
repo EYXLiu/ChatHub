@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using ChatHub.Data;
-using ChatHub.Services;
+using RESTChatHub.Data;
+using RESTChatHub.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

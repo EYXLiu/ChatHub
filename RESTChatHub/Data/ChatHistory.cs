@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ChatHub.Models;
 
-namespace ChatHub.Data
+namespace RESTChatHub.Data
 {
     public class ChatHistory : DbContext
     {

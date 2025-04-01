@@ -4,7 +4,7 @@ using System.Collections.Concurrent;
 using ChatHub.Data;
 using ChatHub.Models;
 
-namespace ChatHub.Services
+namespace RESTChatHub.Services
 {
     public class WebSocketConnectionManager
     {
