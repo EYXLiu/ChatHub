@@ -19,6 +19,7 @@ namespace GraphQLChatHub.GraphQL
             }
         }
         [Subscribe(With = nameof(OnSendMessage))]
-        public Message SendMessage([Topic] string channel, [EventMessage] Message m) => m;
+        [Topic(nameof(Mutation.SendMessage))]
+        public Message SendMessage([EventMessage] Message m) => m;
     }
 }
