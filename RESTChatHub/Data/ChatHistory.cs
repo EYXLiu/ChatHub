@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ChatHub.Models;
+using RESTChatHub.Models;
 
 namespace RESTChatHub.Data
 {

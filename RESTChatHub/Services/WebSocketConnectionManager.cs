@@ -1,8 +1,8 @@
 using System.Net.WebSockets;
 using System.Text;
 using System.Collections.Concurrent;
-using ChatHub.Data;
-using ChatHub.Models;
+using RESTChatHub.Data;
+using RESTChatHub.Models;
 
 namespace RESTChatHub.Services
 {

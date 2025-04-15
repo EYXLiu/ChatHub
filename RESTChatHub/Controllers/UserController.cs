@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using System.Net.WebSockets;
 using System.Threading.Tasks;
-using ChatHub.Services;
+using RESTChatHub.Services;
 
 namespace RESTChatHub.Controllers
 {
